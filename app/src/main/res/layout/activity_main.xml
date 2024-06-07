@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etNum1"
         android:layout_width="386dp"
         android:layout_height="62dp"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:hint="etNum1"
+        android:hint="numberDecimal"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,11 +25,11 @@
         android:layout_height="42dp"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:hint="Enter number"
+        android:hint="numberDecimal"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/etNum1" />
 
     <Button
         android:id="@+id/btnPlus"
@@ -37,13 +37,13 @@
         android:layout_height="49dp"
         android:layout_marginTop="64dp"
         android:text="+"
-        app:layout_constraintEnd_toStartOf="@+id/btnMinus"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNum2" />
 
     <Button
-        android:id="@+id/btnMinus"
+        android:id="@+id/btnSubtract"
         android:layout_width="57dp"
         android:layout_height="47dp"
         android:text="-"
@@ -59,8 +59,8 @@
         android:text="*"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnMinus"
-        app:layout_constraintTop_toTopOf="@+id/btnMinus" />
+        app:layout_constraintStart_toEndOf="@+id/btnSubtract"
+        app:layout_constraintTop_toTopOf="@+id/btnSubtract" />
 
     <Button
         android:id="@+id/btnDivide"
@@ -75,6 +75,7 @@
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="100dp"
